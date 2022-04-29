@@ -1,6 +1,6 @@
-/* Generated on: Fri Apr 29 2022 20:17:29 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Fri Apr 29 2022 21:18:54 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
-   normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css
+   normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type='checkbox'],input[type='radio']{box-sizing:border-box;padding:0}input[type='number']::-webkit-inner-spin-button,input[type='number']::-webkit-outer-spin-button{height:auto}input[type='search']{-webkit-appearance:none}input[type='search']::-webkit-search-cancel-button,input[type='search']::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
@@ -700,8 +700,9 @@ img {
 }
 
 .projects-logo {
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1;
+  font-weight: 700;
   letter-spacing: -0.04em;
 }
 
@@ -778,6 +779,115 @@ img {
   min-height: 150px;
   padding: 20px;
   line-height: 1;
+}
+
+@media screen and (max-width: 991px) {
+  h2 {
+    font-size: 48px;
+  }
+
+  .project-item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  .main-cont {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .project-item {
+    width: 100%;
+  }
+
+  .projects-content-contacts {
+    width: auto;
+  }
+
+  .projects-logo {
+    font-size: 20px;
+  }
+
+  .igor-mosijchuk {
+    width: 40px;
+    height: 40px;
+    margin-top: 1px;
+    margin-left: -53px;
+  }
+
+  .projects-header {
+    margin-right: 53px;
+    margin-left: 48px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  h2 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .main-cont {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .section.projects {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+
+  .project-item {
+    margin-bottom: 20px;
+  }
+
+  .project-text-content {
+    padding: 12px 16px;
+  }
+
+  .btn-label {
+    display: none;
+  }
+
+  .btn.left-icon {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .projects-content-head {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .projects-logo {
+    font-size: 18px;
+  }
+
+  .projects-header {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .btn-icon.left {
+    margin-right: 0px;
+  }
+
+  .btn-label-alt {
+    display: none;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
 }
 
 #w-node-c6801eda-d52f-a002-eb25-59d72ac06ca6-182c4e5d {
@@ -1021,9 +1131,4 @@ img {
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-}
-.project-card,
-.project-card:hover {
-  position:relative;
-  overflow: hidden !important;
 }
