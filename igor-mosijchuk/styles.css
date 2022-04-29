@@ -1,4 +1,4 @@
-/* Generated on: Fri Apr 29 2022 16:22:06 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Fri Apr 29 2022 20:17:29 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css
    ========================================================================== */
@@ -122,7 +122,6 @@ img {
 
 .section.projects {
   padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .p {
@@ -696,6 +695,7 @@ img {
   width: 50%;
   margin-right: -60px;
   margin-left: auto;
+  line-height: 1;
   text-align: right;
 }
 
@@ -764,15 +764,20 @@ img {
   text-transform: lowercase;
 }
 
-#w-node-c5ffe4a5-dd3d-2a7f-397d-acc39b5abe1c-182c4e5d {
-  -ms-grid-column-span: 3;
-  grid-column-end: 4;
-  -ms-grid-column: 1;
-  grid-column-start: 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: 3;
-  -ms-grid-row: 2;
-  grid-row-start: 2;
+.light-shadow-xxl {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.02), 0 10px 8px 0 rgba(0, 0, 0, 0.03), 0 10px 16px 0 rgba(0, 0, 0, 0.08), 0 40px 32px 0 rgba(0, 0, 0, 0.05), 0 80px 60px 0 rgba(0, 0, 0, 0.06), 0 120px 100px 0 rgba(0, 0, 0, 0.07);
+  -webkit-transition: box-shadow 200ms cubic-bezier(.645, .045, .355, 1);
+  transition: box-shadow 200ms cubic-bezier(.645, .045, .355, 1);
+}
+
+.light-shadow-xxl:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.04), 0 10px 8px 0 rgba(0, 0, 0, 0.06), 0 10px 16px 0 rgba(0, 0, 0, 0.16), 0 40px 32px 0 rgba(0, 0, 0, 0.1), 0 80px 60px 0 rgba(0, 0, 0, 0.12), 0 120px 100px 0 rgba(0, 0, 0, 0.14);
+}
+
+.sg-cell-content {
+  min-height: 150px;
+  padding: 20px;
+  line-height: 1;
 }
 
 #w-node-c6801eda-d52f-a002-eb25-59d72ac06ca6-182c4e5d {
@@ -786,15 +791,15 @@ img {
   grid-row-start: 1;
 }
 
-#w-node-_722cc956-d16e-4807-7ab1-cc080ad43f59-182c4e5d {
+#w-node-c5ffe4a5-dd3d-2a7f-397d-acc39b5abe1c-182c4e5d {
   -ms-grid-column-span: 3;
   grid-column-end: 4;
   -ms-grid-column: 1;
   grid-column-start: 1;
   -ms-grid-row-span: 1;
-  grid-row-end: 5;
-  -ms-grid-row: 4;
-  grid-row-start: 4;
+  grid-row-end: 3;
+  -ms-grid-row: 2;
+  grid-row-start: 2;
 }
 
 #w-node-c5ffe4a5-dd3d-2a7f-397d-acc39b5abe26-182c4e5d {
@@ -808,6 +813,17 @@ img {
   grid-row-end: 4;
   -ms-grid-row: 3;
   grid-row-start: 3;
+}
+
+#w-node-_722cc956-d16e-4807-7ab1-cc080ad43f59-182c4e5d {
+  -ms-grid-column-span: 3;
+  grid-column-end: 4;
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 5;
+  -ms-grid-row: 4;
+  grid-row-start: 4;
 }
 
 #w-node-_4f867074-6d2d-21cf-5f8a-df10e97a01e8-182c4e5d {
@@ -930,6 +946,61 @@ img {
   -ms-grid-row-span: 1;
   grid-row-end: span 1;
 }
+
+#w-node-_77984e10-7d4d-cb9e-8994-e52e64119ae5-182c4e5d {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_8e06d3ad-61bc-856a-3f81-8129a0093270-182c4e5d {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-faa7e3cb-2df4-30a2-b537-377bc87b5d6b-182c4e5d {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_2cde7fc0-d3bf-deb8-36f6-648430985192-182c4e5d {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_45b72227-ff74-8bc8-87ff-f8ed00652d08-182c4e5d {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
 @font-face {
   font-family: 'Pt root ui';
   src: url('https://uploads-ssl.webflow.com/6261a8968b8a60ff242c4e4c/6261e468a0d52e636c2a126c_PT%20Root%20UI%20Light.otf') format('opentype');
@@ -950,4 +1021,9 @@ img {
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+}
+.project-card,
+.project-card:hover {
+  position:relative;
+  overflow: hidden !important;
 }
