@@ -3,7 +3,8 @@ const rootFolder = nodePath.basename(nodePath.resolve());
 
 
 
-const buildFolder = `./${rootFolder}-12`;
+// const buildFolder = `./${rootFolder}-2022`;
+const buildFolder = `./dist`;
 const srcFolder = `./src`;
 
 
