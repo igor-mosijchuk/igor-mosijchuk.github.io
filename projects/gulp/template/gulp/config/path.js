@@ -3,7 +3,7 @@ const rootFolder = nodePath.basename(nodePath.resolve());
 
 
 
-const buildFolder = `./_${rootFolder}`;
+const buildFolder = `./${rootFolder}-12`;
 const srcFolder = `./src`;
 
 
