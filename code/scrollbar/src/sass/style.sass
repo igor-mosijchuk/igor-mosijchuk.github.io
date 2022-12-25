@@ -1,3 +1,5 @@
+@import "vars"
+
 =hp($a:0)
 	padding-left: $a
 	padding-right: $a
@@ -87,6 +89,8 @@ img
 	border: none
 	outline: none
 
+
+
 [data-scrollbar],
 [scrollbar],
 scrollbar
@@ -162,7 +166,7 @@ scrollbar .overscroll-glow
 [data-scrollbar] .scrollbar-inner,
 [scrollbar] .scrollbar-inner,
 scrollbar .scrollbar-inner
-	background: rgba(0, 0, 0, 0.3)
+	background: $scrolbar_color
 	position: absolute
 	left: 3px
 	right: 6px
@@ -173,14 +177,10 @@ scrollbar .scrollbar-inner
 [data-scrollbar] .scrollbar-inner:hover,
 [scrollbar] .scrollbar-inner:hover,
 scrollbar .scrollbar-inner:hover
-	background: rgba(0, 0, 0, 0.6)
-
-$main_cont: 600px
+	background: $scrolbar_color_hover
 
 
-@import "modules/sections"
 
-@import "modules/home-content"
 
 
 html
@@ -196,3 +196,45 @@ h2
 	font-size: 3rem
 h3
 	font-size: 2rem
+@media screen and (min-width: 500px)
+	.page
+		min-height: 100vh
+		display: flex
+		flex-direction: column
+	[data-scrollbar]
+		height: 100vh
+		overflow: hidden
+.page-top-btn
+	height: 60px
+	width: 60px
+	background: red
+	position: fixed
+	bottom: 30px
+	right: 30px
+	z-index: 1
+header, footer
+	padding: 40px 0
+	outline: 2px solid
+
+footer
+	margin-top: auto
+
+main
+	font-size: 20px
+	// display: none
+
+section
+	+vp(80px)
+	&:nth-of-type(odd)
+		background: #00000007
+
+.main-cont [class*="-content"]
+	+br
+
+.main-cont
+	width: 100%
+	max-width: $main_cont
+	+hm(auto)
+	+hp(20px)
+
+// @import "modules/sections"

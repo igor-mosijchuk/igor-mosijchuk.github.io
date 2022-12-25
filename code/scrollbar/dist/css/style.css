@@ -278,6 +278,27 @@ scrollbar .scrollbar-inner:hover {
   background: rgba(0, 0, 0, 0.6);
 }
 
+html {
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 200 0.8rem/1.5 "Manrope", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
 .page-top-btn {
   height: 60px;
   width: 60px;
@@ -322,27 +343,6 @@ section:nth-of-type(odd) {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-html {
-  font-size: 20px;
-  scroll-behavior: smooth;
-}
-
-body {
-  font: 200 0.8rem/1.5 "Manrope", sans-serif;
-}
-
-h1 {
-  font-size: 4rem;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-h3 {
-  font-size: 2rem;
 }
 
 @media screen and (min-width: 500px) {
