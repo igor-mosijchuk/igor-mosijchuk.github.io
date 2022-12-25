@@ -302,13 +302,17 @@ main {
   font-size: 20px;
 }
 
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 section:nth-of-type(odd) {
   background: rgba(0, 0, 0, 0.0274509804);
 }
 
 .main-cont [class*=-content] {
   border: 1px solid red;
-  margin: 80px 0;
 }
 
 .main-cont {
