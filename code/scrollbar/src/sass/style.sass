@@ -233,12 +233,15 @@ section
 
 body
 	min-height: 100vh
-	-webkit-scrollbar-width: 0
-	scrollbar-width: 0
+
+@media screen and (min-width: 900px)
+	body
+		-webkit-scrollbar-width: 0
+		scrollbar-width: 0
+	::-webkit-scrollbar
+		width: 0
 
 
-::-webkit-scrollbar
-	width: 0
 
 
 // .page-wrap
@@ -246,14 +249,14 @@ body
 #myBtn
 	// display: none // Hidden by default
 	position: fixed // Fixed/sticky position
-	bottom: 100px // Place the button at the bottom of the page
-	right: 30px // Place the button 30px from the right
-	border: none // Remove borders
-	outline: none // Remove outline
-	background: transparentize(red, .5) // Set a background color
-	color: white // Text color
-	cursor: pointer // Add a mouse pointer on hover
-	padding: 15px 30px // Some padding
-	border-radius: 10px // Rounded corners
+	bottom: 100px
+	right: 30px
+	border: none
+	outline: none
+	background: transparentize(red, .5)
+	color: white
+	cursor: pointer
+	padding: 15px 30px
+	border-radius: 100px
 	font-size: 18px // Increase font size
 	z-index: 2000 !important
