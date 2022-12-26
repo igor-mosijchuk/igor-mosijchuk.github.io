@@ -1,0 +1,23 @@
+html
+
+.page-wrap #page-scrollbar data-scrollbar="true"
+	.page
+		header
+		…
+		section
+		…
+		footer
+
+js
+	ScrollbarOptions
+	min width
+
+css
+	data
+
+sass
+	vars
+		$scrolbar_color: rgba(0,0,0,.3)
+		$scrolbar_color_hover: rgba(0,0,0,.6)
+		$min_scrollbar_screen: 900px
+		$scrollbar_track_y: 14px

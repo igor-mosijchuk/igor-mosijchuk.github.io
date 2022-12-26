@@ -56,6 +56,9 @@ table
 
 
 
+button
+	border: none
+
 *, *:before, *:after
 	box-sizing: border-box
 a
@@ -140,7 +143,7 @@ scrollbar .scrollbar-track-x
 [scrollbar] .scrollbar-track-y,
 scrollbar .scrollbar-track-y
 	right: 0
-	width: 14px
+	width: $scrollbar_track_y
 [data-scrollbar] .scrollbar-thumb,
 [scrollbar] .scrollbar-thumb,
 scrollbar .scrollbar-thumb
@@ -168,11 +171,11 @@ scrollbar .overscroll-glow
 scrollbar .scrollbar-inner
 	background: $scrolbar_color
 	position: absolute
-	left: 3px
-	right: 6px
-	top: 8px
-	bottom: 8px
-	border-radius: 100px
+	left: $scrollbar_inner_left
+	right: $scrollbar_inner_right
+	top: $scrollbar_inner_vertical
+	bottom: $scrollbar_inner_vertical
+	border-radius: $scrollbar_inner_radius
 	transition: background 0.5s ease-out
 [data-scrollbar] .scrollbar-inner:hover,
 [scrollbar] .scrollbar-inner:hover,
@@ -189,14 +192,13 @@ html
 
 body
 	font: 200 0.8rem/1.5 "Manrope", sans-serif
-
 h1
 	font-size: 4rem
 h2
 	font-size: 3rem
 h3
 	font-size: 2rem
-@media screen and (min-width: 500px)
+@media screen and (min-width: $min_scrollbar_screen)
 	.page
 		min-height: 100vh
 		display: flex
@@ -204,17 +206,9 @@ h3
 	[data-scrollbar]
 		height: 100vh
 		overflow: hidden
-.page-top-btn
-	height: 60px
-	width: 60px
-	background: red
-	position: fixed
-	bottom: 30px
-	right: 30px
-	z-index: 1
 header, footer
 	padding: 40px 0
-	outline: 2px solid
+	// outline: 2px solid
 
 footer
 	margin-top: auto
@@ -237,4 +231,29 @@ section
 	+hm(auto)
 	+hp(20px)
 
-// @import "modules/sections"
+body
+	min-height: 100vh
+	-webkit-scrollbar-width: 0
+	scrollbar-width: 0
+
+
+::-webkit-scrollbar
+	width: 0
+
+
+// .page-wrap
+	// position: relative
+#myBtn
+	// display: none // Hidden by default
+	position: fixed // Fixed/sticky position
+	bottom: 100px // Place the button at the bottom of the page
+	right: 30px // Place the button 30px from the right
+	border: none // Remove borders
+	outline: none // Remove outline
+	background: transparentize(red, .5) // Set a background color
+	color: white // Text color
+	cursor: pointer // Add a mouse pointer on hover
+	padding: 15px 30px // Some padding
+	border-radius: 10px // Rounded corners
+	font-size: 18px // Increase font size
+	z-index: 2000 !important
