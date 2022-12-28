@@ -9,7 +9,7 @@ if (window.matchMedia("(min-width: 900px)").matches) {
 	document.querySelector('.scrollbar-thumb-y').insertAdjacentHTML("beforeend", `<div class="scrollbar-inner"></div>`);
 }
 
-let mybutton = document.getElementById("myBtn");
+let mybutton = document.getElementById("topBtn");
 mybutton.onclick = function () { topFunction() };
 
 // window.onscroll = function () { scrollFunction() };
