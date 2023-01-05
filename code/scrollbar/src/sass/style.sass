@@ -246,17 +246,21 @@ body
 
 // .page-wrap
 	// position: relative
-#myBtn
+#topBtn
 	// display: none // Hidden by default
 	position: fixed // Fixed/sticky position
 	bottom: 100px
 	right: 30px
 	border: none
 	outline: none
-	background: transparentize(red, .5)
+	// background: transparentize(red, .5)
+	background: red
 	color: white
 	cursor: pointer
 	padding: 15px 30px
 	border-radius: 100px
 	font-size: 18px // Increase font size
 	z-index: 2000 !important
+	transition: 0.3s ease-in-out
+	&:hover
+		background: red
