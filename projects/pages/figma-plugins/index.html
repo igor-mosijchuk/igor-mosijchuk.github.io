@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,33 @@
 	<title>Figma Plugins</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-	<div class="wrap">
-		<div class="headbar">
-			<h1>Figma Plugins</h1>
-			<input id="search-input" type="text" placeholder="Пошук…" autofocus>
-		</div>
 
-<!--
-		<div class="filter-frame">
-			<div class="filter">
-				<div class="filter-content">
-					<div>all</div>
-					<div>must have</div>
+<body>
+	<div class="page">
+		<div class="wrap">
+			<div class="headbar">
+				<h1>Figma Plugins</h1>
+				<div id="filters">
+					<input id="search-input" type="text" placeholder="Пошук…" autofocus>
+					<button class="btn active" onclick="filterSelection('all')">Всі</button>
+					<button class="btn" onclick="filterSelection('review')">Переглянути</button>
+					<button class="btn" onclick="filterSelection('must_have')">Must Have</button>
+					<button class="btn" onclick="filterSelection('like')">Задовільні</button>
+					<button class="btn" onclick="filterSelection('dont_like')">don't like</button>
+					<button class="btn" onclick="filterSelection('dont_install')">don't install</button>
 				</div>
 			</div>
-		</div> -->
 
-		<h3>Grid Begin</h3>
-		<div id="plugins" class="plugins">
-			<div id="plugins-list"></div>
+
+
+			<h3>Grid Begin</h3>
+			<div id="plugins" class="plugins">
+				<div id="plugins-list"></div>
+			</div>
+			<h3>Grid End</h3>
 		</div>
-		<h3>Grid End</h3>
 	</div>
 	<script src="js/main.js"></script>
 </body>
+
 </html>
