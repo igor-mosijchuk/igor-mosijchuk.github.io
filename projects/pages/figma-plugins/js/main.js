@@ -1,10 +1,7 @@
 let SHEET_ID = '1tMFMujULZ4tHcHX8qyyUKYaI4WTZOO2mhvfIwVy0Vok'
-
 let SHEET_TITLE = 'Plugins';
 let SHEET_RANGE = 'C3:F12'
-
 let FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
-
 fetch(FULL_URL)
 .then(res => res.text())
 .then(rep => {
@@ -18,6 +15,7 @@ fetch(FULL_URL)
 		let Link = document.createElement('a');
 		let Preview = document.createElement('img');
 		let PluginName = document.createElement('h4');
+
 		NewBox.className = "plugins-item";
 		PluginName.innerHTML = data.table.rows[i].c[0].v;
 		Preview.src = data.table.rows[i].c[1].v;
@@ -27,13 +25,9 @@ fetch(FULL_URL)
 		Link.target = "_blank"
 
 		plugins_list.append(NewBox);
-
-
 		NewBox.append(Link);
 		Link.append(Preview);
 		Link.append(PluginName);
-
-
 	}
 
 })
