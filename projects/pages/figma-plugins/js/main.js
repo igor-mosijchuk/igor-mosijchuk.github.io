@@ -1,7 +1,7 @@
 let SHEET_ID = '1tMFMujULZ4tHcHX8qyyUKYaI4WTZOO2mhvfIwVy0Vok'
 
-let SHEET_TITLE = 'my_test';
-let SHEET_RANGE = 'E10:F21'
+let SHEET_TITLE = 'Plugins';
+let SHEET_RANGE = 'C3:F12'
 
 let FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
 
@@ -9,30 +9,30 @@ fetch(FULL_URL)
 .then(res => res.text())
 .then(rep => {
 	let data = JSON.parse(rep.substr(47).slice(0,-2));
-
-	let player_Name_title = document.getElementById('player_Name_title');
-	let player_Shoe_title = document.getElementById('player_Shoe_title');
-	let player_Name = document.getElementById('player_Name');
-	let player_Shoe = document.getElementById('player_Shoe');
+	let plugins_list = document.getElementById('plugins-list');
 	let length = data.table.rows.length;
-
-
-	player_Name_title.innerHTML = data.table.rows[0].c[0].v;
-	player_Shoe_title.innerHTML = data.table.rows[0].c[1].v;
 
 	for(let i = 1;i<length;i++){
 
-		let NewBoxPlayer = document.createElement('div');
-		NewBoxPlayer.id = ("box" + i);
-		NewBoxPlayer.className = "style";
-		player_Name.append(NewBoxPlayer);
-		NewBoxPlayer.innerHTML = data.table.rows[i].c[0].v;
+		let NewBox = document.createElement('div');
+		let Link = document.createElement('a');
+		let Preview = document.createElement('img');
+		let PluginName = document.createElement('h4');
+		NewBox.className = "plugins-item";
+		PluginName.innerHTML = data.table.rows[i].c[0].v;
+		Preview.src = data.table.rows[i].c[1].v;
+		Preview.className = "img_style";
+		Link.className = "plugins-item-content";
+		Link.href = data.table.rows[i].c[2].v;
+		Link.target = "_blank"
 
-		let NewBoxShoe = document.createElement('div');
-		NewBoxShoe.id = ("box" + i);
-		NewBoxShoe.className = "style";
-		player_Shoe.append(NewBoxShoe);
-		NewBoxShoe.innerHTML = data.table.rows[i].c[1].v;
+		plugins_list.append(NewBox);
+
+
+		NewBox.append(Link);
+		Link.append(Preview);
+		Link.append(PluginName);
+
 
 	}
 
