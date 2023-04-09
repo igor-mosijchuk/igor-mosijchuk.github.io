@@ -1,6 +1,6 @@
 let SHEET_ID = '1oQGnzagrCDBZqZ5-GLmvjxiVnL0VoHSMOBGiUZ9ZHmg'
 let SHEET_TITLE = 'Plugins';
-let SHEET_RANGE = 'E1:H150'
+let SHEET_RANGE = 'D1:H150'
 let FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
 fetch(FULL_URL)
 	.then(res => res.text())
@@ -19,24 +19,24 @@ fetch(FULL_URL)
 				PluginName = document.createElement('h4'),
 				Description = document.createElement('p');
 				StatusField = document.createElement('p');
-			let Status = data.table.rows[i].c[1].v;
+			let Status = data.table.rows[i].c[2].v;
 
 			StatusField.innerHTML = Status;
 
 			NewBox.className = `plugins-item ${Status} show`;
 			NewBox.append(Link);
 
-			PluginName.innerHTML = data.table.rows[i].c[0].v;
+			PluginName.innerHTML = data.table.rows[i].c[1].v;
 
 
-			Preview.src = "img/preview/" + data.table.rows[i].c[0].v + ".png";
+			Preview.src = "img/preview/" + data.table.rows[i].c[1].v + ".png";
 			Preview.className = "img_style";
 
 			Link.className = "plugins-item-content";
-			Link.href = data.table.rows[i].c[3].v;
+			Link.href = data.table.rows[i].c[4].v;
 			Link.target = "_blank"
 			Link.append(PreviewFrame, Info);
-			Description.innerHTML = data.table.rows[i].c[2].v;
+			Description.innerHTML = data.table.rows[i].c[3].v;
 			Info.className = "plugin-info";
 			Info.append(PluginName, Description);
 			PreviewFrame.append(Preview, StatusField)
