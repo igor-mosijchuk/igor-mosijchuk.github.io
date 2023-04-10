@@ -1,6 +1,6 @@
 let SHEET_ID = '1oQGnzagrCDBZqZ5-GLmvjxiVnL0VoHSMOBGiUZ9ZHmg'
 let SHEET_TITLE = 'Plugins';
-let SHEET_RANGE = 'C1:H150'
+let SHEET_RANGE = 'C1:I150'
 let FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
 fetch(FULL_URL)
 	.then(res => res.text())
@@ -21,7 +21,7 @@ fetch(FULL_URL)
 				StatusField = document.createElement('p'),
 				KeyField = document.createElement('span'),
 				Status = data.table.rows[i].c[3].v;
-				Key = data.table.rows[i].c[1].v;
+				Key = data.table.rows[i].c[6].v;
 
 			NewBox.className = `plugins-item ${Status} show`;
 			NewBox.append(Link);
@@ -44,9 +44,19 @@ fetch(FULL_URL)
 			Description.innerHTML = data.table.rows[i].c[4].v;
 
 			plugins_list.append(NewBox);
+
+			if (KeyField.textContent != 0) { KeyField.style.cssText = "display:block; background:red" }
+
+			if (StatusField.textContent == "bad") { StatusField.style.cssText = "background:yellow" }
+
 		}
 
 	});
+
+
+
+
+
 
 document.querySelector('#search-input').addEventListener('input', filterList);
 
@@ -107,3 +117,8 @@ for (var i = 0; i < btns.length; i++) {
 		this.className += " active";
 	});
 }
+
+
+
+
+

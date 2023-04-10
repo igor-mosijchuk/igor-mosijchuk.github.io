@@ -38,8 +38,8 @@ h3 {
 
 .plugins {
 	width: 100%;
-	outline: 1px dashed transparent;
 	outline: 1px dashed green;
+	outline: 1px dashed transparent;
 	min-height: 100vh;
 }
 #plugins-list {
@@ -52,16 +52,9 @@ h3 {
 
 }
 .plugins-item {
-	/* min-width: 240px; */
-
 	width: 12.5%;
 	margin-bottom: var(--row-bottom);
-	/* outline: .5px dashed red; */
 
-	/* width: 100px; */
-	/* line-height: 100px; */
-	/* text-align: center; */
-	/* margin: 2px; */
 	display: none;
 }
 .plugins-item-content {
@@ -70,18 +63,17 @@ h3 {
 	display: block;
 	height: 100%;
 	margin: 0 var(--gutter);
-	border-radius: 8px;
 	overflow: hidden;
-
-
+	border-radius: 8px;
 }
+
 .plugin-info {
 	padding: 12px;
 }
 
 .plugin-info p {
 	color: #898989;
-	margin-top: 12px;
+	margin-top: 6px;
 	font-size: 12px;
 
 	overflow: hidden;
@@ -91,7 +83,6 @@ h3 {
 	/* autoprefixer: ignore next */
 	-webkit-box-orient: vertical;
 }
-
 
 .img_style {
 	width: 100%;
@@ -191,25 +182,31 @@ h3 {
 }
 
 .cover {
-position: relative;
+	position: relative;
 }
-.cover span {
-	bottom: 10px;
-}
+
 .cover p {
-	top: 15px;
-	opacity: .5;
+	top: 8px;
+	/* opacity: .5; */
+	/* background: red; */
+	background: transparent;
+	padding: 3px 9px;
+	/* color: #ffffff; */
 }
 .cover p, .cover span {
 	position: absolute;
-	left: 10px;
-
-	background: #6938bf;
-	color: white;
-	padding: 3px 9px;
+	left: 8px;
 	border-radius: 30px;
 	font-size: 10px;
 	font-weight: 800;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
+}
+
+.cover span {
+	bottom: 10px;
+	color: #ffffff;
+	display: none;
+	padding: 5px 10px;
+	background: #6938bf;
 }
