@@ -1,6 +1,6 @@
 let SHEET_ID = '1oQGnzagrCDBZqZ5-GLmvjxiVnL0VoHSMOBGiUZ9ZHmg'
 let SHEET_TITLE = 'Plugins';
-let SHEET_RANGE = 'C1:I150'
+let SHEET_RANGE = 'D2:J150'
 let FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
 fetch(FULL_URL)
 	.then(res => res.text())
@@ -9,45 +9,46 @@ fetch(FULL_URL)
 		let plugins_list = document.getElementById('plugins-list');
 		let length = data.table.rows.length;
 
-		for (let i = 1; i < length; i++) {
+		for (let i = 0; i < length; i++) {
 
-			let NewBox = document.createElement('div'),
-				Link = document.createElement('a'),
-				PreviewFrame = document.createElement('div'),
-				Preview = document.createElement('img'),
-				Info = document.createElement('div'),
-				PluginName = document.createElement('h4'),
-				Description = document.createElement('p');
-				StatusField = document.createElement('p'),
-				KeyField = document.createElement('span'),
-				Status = data.table.rows[i].c[3].v;
-				Key = data.table.rows[i].c[6].v;
+			let NewBox = document.createElement('div');
+				let Link = document.createElement('a');
+				let PreviewFrame = document.createElement('div');
+				let Preview = document.createElement('img');
+				let Info = document.createElement('div');
+				let PluginName = document.createElement('h4');
+				let Description = document.createElement('p');
+				let StatusField = document.createElement('p');
+				let KeyField = document.createElement('span');
+				let Status = data.table.rows[i].c[1].v;
+				// let Key = data.table.rows[i].c[4].v;
+				let Key = data.table.rows[i].c[4];
 
 			NewBox.className = `plugins-item ${Status} show`;
 			NewBox.append(Link);
 
 			Link.className = "plugins-item-content";
-			Link.href = data.table.rows[i].c[5].v;
+			Link.href = data.table.rows[i].c[6].v;
 			Link.target = "_blank"
 			Link.append(PreviewFrame, Info);
 
 			PreviewFrame.append(Preview, StatusField, KeyField)
 			PreviewFrame.className = "cover"
-			Preview.src = "img/preview/" + data.table.rows[i].c[2].v + ".png";
+			Preview.src = "img/preview/" + data.table.rows[i].c[3].v + ".png";
 			Preview.className = "img_style";
 			StatusField.innerHTML = Status;
 			KeyField.innerHTML = Key;
 
 			Info.className = "plugin-info";
 			Info.append(PluginName, Description);
-			PluginName.innerHTML = data.table.rows[i].c[2].v;
-			Description.innerHTML = data.table.rows[i].c[4].v;
+			PluginName.innerHTML = data.table.rows[i].c[3].v;
+			Description.innerHTML = data.table.rows[i].c[5].v;
 
+
+			// if (KeyField.textContent != 0) { KeyField.style.cssText = "display:block; background:red" }
+
+			// if (StatusField.textContent == "bad") { StatusField.style.cssText = "background:yellow" }
 			plugins_list.append(NewBox);
-
-			if (KeyField.textContent != 0) { KeyField.style.cssText = "display:block; background:red" }
-
-			if (StatusField.textContent == "bad") { StatusField.style.cssText = "background:yellow" }
 
 		}
 
@@ -117,8 +118,3 @@ for (var i = 0; i < btns.length; i++) {
 		this.className += " active";
 	});
 }
-
-
-
-
-
