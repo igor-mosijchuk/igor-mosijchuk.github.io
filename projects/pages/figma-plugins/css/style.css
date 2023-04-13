@@ -53,8 +53,9 @@ h3 {
 }
 .plugins-item {
 	width: 12.5%;
+	width: 20%;
+	/* min-width: 300px; */
 	margin-bottom: var(--row-bottom);
-
 	display: none;
 }
 .plugins-item-content {
@@ -62,6 +63,7 @@ h3 {
 	box-shadow: 0 20px 20px -15px rgba(0,0,0,.075);
 	display: block;
 	height: 100%;
+
 	margin: 0 var(--gutter);
 	overflow: hidden;
 	border-radius: 8px;
@@ -79,9 +81,17 @@ h3 {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
-	-webkit-line-clamp: 3;
+	-webkit-line-clamp: 1;
 	/* autoprefixer: ignore next */
 	-webkit-box-orient: vertical;
+}
+
+h4 {
+	/* overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical; */
 }
 
 .img_style {
