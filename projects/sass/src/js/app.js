@@ -23,12 +23,24 @@ const ScrollbarOptions = {
 
 
 if (window.matchMedia("(min-width: 500px)").matches) {
-	Scrollbar.use(OverscrollPlugin ,AnchorPlugin);
+	Scrollbar.use(OverscrollPlugin, AnchorPlugin);
 
 	Scrollbar.init(document.querySelector('.page-wrap'), ScrollbarOptions);
 
 	document.querySelector('.scrollbar-thumb-y').insertAdjacentHTML("beforeend", `<div class="scrollbar-inner"></div>`);
 }
 
+
+const fixedElem = document.getElementsByClassName('fixed-nav')[0]
+
+const scrollbar = Scrollbar.init(
+	document.getElementsByClassName('scroll')[0]
+)
+
+scrollbar.addListener(status => {
+	const offset = status.offset
+
+	fixedElem.style.top = offset.y + 'px'
+})
 
 projectFunctions.isWebp();
