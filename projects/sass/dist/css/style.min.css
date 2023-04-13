@@ -312,8 +312,12 @@ section:nth-of-type(odd) {
 
 .fixed-nav {
   width: 100%;
-  text-align: center;
+  text-align: right;
   position: fixed;
   z-index: 100;
+}
+
+.scrollbar-track.scrollbar-track-y.show {
+  z-index: 1000;
 }
 /*# sourceMappingURL=style.css.map */
