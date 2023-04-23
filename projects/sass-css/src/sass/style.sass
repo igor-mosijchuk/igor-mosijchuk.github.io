@@ -1,0 +1,21 @@
+// @import reset
+@import mixins/base
+@import mixins/breakpoints
+@import mixins/margins
+
+@import base
+
+.class
+	width: 80%
+	max-width: 1200px
+	+hm-c
+	+x1
+		width: 100%
+
+// @debug $sizes
+
+.class
+	width: 20%
+	+x4
+		width: 40%
+
