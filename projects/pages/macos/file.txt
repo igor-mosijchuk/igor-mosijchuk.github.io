@@ -1,0 +1,8 @@
+<!-- code note -->
+Встановлення програм з будь-яких джерел
+	sudo spctl --master-disable
+
+
+sudo xattr -cr [ path/*.app ]
+example
+sudo xattr -cr /Applications/Keyshape.app

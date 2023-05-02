@@ -1,0 +1,48 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+button {
+	padding: 15px 25px;
+	margin: 10px 10px 0 0;
+	background: #fff;
+}
+
+.section-symbol {
+	border: none;
+	border-radius: 10px;
+}
+
+.container {
+	background: #393939;
+	max-width: 700px;
+	margin: 100px auto;
+	padding: 80px;
+}
+
+.codeNode {
+	border-radius: 20px;
+	padding: 10px;
+	color: chartreuse;
+	max-width: 500px;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+.codeNode + .codeNode {
+	margin-top: 30px;
+}
+
+
+object {
+	width: 100%;
+	border: 1px salmon solid;
+	margin-top: -1em;
+	min-height: 300px
+
+}
+
+
+.included {
+	/* font-size: 12px */
+}
