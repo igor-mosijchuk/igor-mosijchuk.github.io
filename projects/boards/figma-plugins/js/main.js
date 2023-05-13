@@ -27,27 +27,27 @@ fetch(FULL_URL)
 			NewBox.className = `plugins-item ${Status} show`;
 			NewBox.append(Link);
 
-			Link.className = "plugins-item-content";
+			Link.className = 'plugins-item-content';
 			Link.href = data.table.rows[i].c[6].v;
-			Link.target = "_blank"
+			Link.target = '_blank'
 			Link.append(PreviewFrame, Info);
 
 			PreviewFrame.append(Preview, StatusField, KeyField)
-			PreviewFrame.className = "cover"
-			Preview.src = "img/preview/" + data.table.rows[i].c[3].v + ".png";
-			Preview.className = "img_style";
+			PreviewFrame.className = 'cover'
+			Preview.src = 'img/preview/' + data.table.rows[i].c[3].v + '.png';
+			Preview.className = 'img_style';
 			StatusField.innerHTML = Status;
 			KeyField.innerHTML = Key;
 
-			Info.className = "plugin-info";
+			Info.className = 'plugin-info';
 			Info.append(PluginName, Description);
 			PluginName.innerHTML = data.table.rows[i].c[3].v;
 			Description.innerHTML = data.table.rows[i].c[5].v;
 
 
-			// if (KeyField.textContent != 0) { KeyField.style.cssText = "display:block; background:red" }
+			// if (KeyField.textContent != 0) { KeyField.style.cssText = 'display:block; background:red' }
 
-			// if (StatusField.textContent == "bad") { StatusField.style.cssText = "background:yellow" }
+			// if (StatusField.textContent == 'bad') { StatusField.style.cssText = 'background:yellow' }
 			plugins_list.append(NewBox);
 
 		}
@@ -76,45 +76,45 @@ function filterList() {
 
 }
 
-filterSelection("all")
+filterSelection('all')
 function filterSelection(c) {
 	var x, i;
-	x = document.getElementsByClassName("plugins-item");
-	if (c == "all") c = "";
+	x = document.getElementsByClassName('plugins-item');
+	if (c == 'all') c = '';
 	for (i = 0; i < x.length; i++) {
-		removeShowClass(x[i], "show");
-		if (x[i].className.indexOf(c) > -1) addShowClass(x[i], "show");
+		removeShowClass(x[i], 'show');
+		if (x[i].className.indexOf(c) > -1) addShowClass(x[i], 'show');
 	}
 }
 
 function addShowClass(element, name) {
 	var i, arr1, arr2;
-	arr1 = element.className.split(" ");
-	arr2 = name.split(" ");
+	arr1 = element.className.split(' ');
+	arr2 = name.split(' ');
 	for (i = 0; i < arr2.length; i++) {
-		if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+		if (arr1.indexOf(arr2[i]) == -1) {element.className += ' ' + arr2[i];}
 	}
 }
 
 function removeShowClass(element, name) {
 	var i, arr1, arr2;
-	arr1 = element.className.split(" ");
-	arr2 = name.split(" ");
+	arr1 = element.className.split(' ');
+	arr2 = name.split(' ');
 	for (i = 0; i < arr2.length; i++) {
 		while (arr1.indexOf(arr2[i]) > -1) {
 			arr1.splice(arr1.indexOf(arr2[i]), 1);
 		}
 	}
-	element.className = arr1.join(" ");
+	element.className = arr1.join(' ');
 }
 
 // Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("filters");
-var btns = btnContainer.getElementsByClassName("btn");
+var btnContainer = document.getElementById('filters');
+var btns = btnContainer.getElementsByClassName('btn');
 for (var i = 0; i < btns.length; i++) {
-	btns[i].addEventListener("click", function(){
-		var current = document.getElementsByClassName("active");
-		current[0].className = current[0].className.replace(" active", "");
-		this.className += " active";
+	btns[i].addEventListener('click', function(){
+		var current = document.getElementsByClassName('active');
+		current[0].className = current[0].className.replace(' active', '');
+		this.className += ' active';
 	});
 }
