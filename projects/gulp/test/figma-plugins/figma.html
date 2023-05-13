@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Figma Page</title>
+
+	<link rel="icon" href="favicon.ico" sizes="32x32" type="image/x-icon">
+	<link rel="icon" href="img/favicon/favicon.svg" sizes="any" type="image/svg+xml">
+	<link rel="icon" href="apple-touch-icon.png">
+	<link rel="manifest" href="manifest.json">
+
+	<link rel="stylesheet" href="css/style.min.css?_v=20230513201428">
+
+</head>
+
+<body>
+	<a class="page-top-btn" href="#top"><span>↑</span></a>
+
+	<div class="page-wrap" id="page-scrollbar" data-scrollbar="true">
+
+		<div class="page-content main-cont">
+
+			<header class="figma">
+	<div class="main-cont">
+		<div class="header-content">
+			1 figma header
+			<nav class="tabs-nav">
+
+				<div class="tabs-nav-item is-active" data-tab-name="tab-1">Plugins</div>
+
+				<div class="tabs-nav-item" data-tab-name="tab-2">Figma → Keyboard Maestro</div>
+
+				<div class="tabs-nav-item" data-tab-name="tab-3">macOS</div>
+
+			</nav>
+
+		</div>
+
+	</div>
+</header>
+
+			→ figma main
+
+<!-- <1div class="tabs"> -->
+
+
+<div class="tabs__content">
+
+	<div class="tab is-active tab-1">
+		
+<div>
+		<div id="filters">
+			<input id="search-input" type="text" placeholder="Пошук…" autofocus>
+			<button class="btn active" onclick="filterSelection('all')">Всі</button>
+			<button class="btn" onclick="filterSelection('review')">Переглянути</button>
+			<button class="btn" onclick="filterSelection('must_have')">Must Have</button>
+			<button class="btn" onclick="filterSelection('like')">Задовільні</button>
+			<button class="btn" onclick="filterSelection('bad')">Не цікаво</button>
+			<button class="btn" onclick="filterSelection('dont_install')">don't install</button>
+		</div>
+
+		<!-- List Begin -->
+		<div id="pluginsList" class="plugin-list">
+
+		</div>
+		<!-- list End -->
+</div>
+
+
+	</div>
+
+	<div class="tab tab-2">
+		Figma → Keyboard Maestro
+	</div>
+
+	<div class="tab tab-3">
+		Content
+	</div>
+</div>
+
+<!-- </1div> -->
+			<footer class="figma">
+	<div class="main-cont">
+		<div class="footer-content">
+			figma footer content 2
+		</div>
+	</div>
+</footer>
+			
+
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230513201428"></script>
+
+</body>
+
+</html>
