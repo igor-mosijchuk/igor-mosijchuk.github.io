@@ -395,7 +395,7 @@ nav {
   display: block;
 }
 
-.plugin-list {
+#plugins-list {
   overflow: hidden;
   box-shadow: 0 0 12px red;
   display: flex;
@@ -404,23 +404,23 @@ nav {
   width: 100%;
 }
 
-.plugin-card {
+.plugins-item {
   width: 20%;
   padding: 12px;
   margin-bottom: 20px;
 }
 
-.plugin-card:last-child {
+.plugins-item:last-child {
   outline: #9747ff 1px dashed;
 }
 
-.plugin-link {
+.plugins-link {
   background: rgba(255, 0, 0, 0.5);
   overflow: hidden;
   width: 100%;
 }
 
-.plugin-content {
+.plugins-content {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -429,7 +429,7 @@ nav {
   width: 100%;
 }
 
-.plugin-content p {
+.plugins-content p {
   position: absolute;
   top: 0;
   left: 0;
@@ -437,7 +437,7 @@ nav {
   background: rgba(255, 165, 0, 0.3);
 }
 
-.plugin-preview {
+.plugins-preview {
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -446,7 +446,7 @@ nav {
   left: 0;
 }
 
-.plugin-info {
+.plugins-info {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -454,13 +454,13 @@ nav {
   z-index: 2;
 }
 
-.plugin-info strong {
+.plugins-info strong {
   padding: 0;
   margin: 0;
   font-size: 14px;
 }
 
-.plugin-preview img {
+.plugins-preview img {
   border-radius: 11px;
   position: absolute;
   -o-object-fit: cover;
@@ -471,4 +471,45 @@ nav {
 
 pre {
   font-size: 100px;
+}
+
+.btn {
+  padding: 20px !important;
+  background: rgba(255, 0, 0, 0.3) !important;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
 }
