@@ -1,48 +1,65 @@
-* {
-	padding: 0;
-	margin: 0;
-}
-
-button {
-	padding: 15px 25px;
-	margin: 10px 10px 0 0;
-	background: #fff;
-}
-
-.section-symbol {
-	border: none;
-	border-radius: 10px;
-}
-
-.container {
-	background: #393939;
-	max-width: 700px;
-	margin: 100px auto;
-	padding: 80px;
-}
-
-.codeNode {
-	border-radius: 20px;
-	padding: 10px;
-	color: chartreuse;
-	max-width: 500px;
-	border: 1px solid #fff;
-	cursor: pointer;
-}
-.codeNode + .codeNode {
-	margin-top: 30px;
-}
-
-
 object {
 	width: 100%;
-	border: 1px salmon solid;
-	margin-top: -1em;
-	min-height: 300px
+	height: auto;
+}
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,200;0,600;0,800;1,400&family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
+
+* {
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgba(0, 0, 0, .2);
+}
+
+ul {
+	max-width: 960px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px;
+	border: 1px olive solid;
 
 }
 
+pre {
+	width: 100%;
+	border: 1px saddlebrown solid;
+	background-color: #eee;
+	border-radius: 10px;
+	overflow: auto;
+	padding: 1em .5em 1em 0;
+	tab-size: 2em;
+	line-height: 100%;
+}
 
-.included {
-	/* font-size: 12px */
+pre+pre {
+	margin-top: 12px;
+}
+
+pre,
+pre .line-number {
+	color: black;
+	display: block;
+	font: normal normal 16px/28px 'JetBrains Mono', Monospace;
+}
+
+pre .line-number {
+	float: left;
+	width: 60px;
+	margin-right: 25px;
+	border-right: 2px solid grey;
+	text-align: right;
+}
+
+pre .line-number span {
+	display: block;
+	font-size: 11.1px;
+	margin-right: 1em;
+	opacity: .2;
+	outline: 1px solid;
+	padding-left: 1em;
+	padding-right: .5em;
 }
