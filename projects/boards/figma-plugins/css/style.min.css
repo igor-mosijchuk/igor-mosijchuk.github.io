@@ -269,7 +269,7 @@ input[id=paid]:checked ~ .review, input[id=paid]:checked ~ .bad, input[id=paid]:
 
 .input-frame {
   width: 100%;
-  margin: 10px 12px 40px;
+  margin: 10px 8px 40px;
 }
 
 #search-input {
@@ -284,6 +284,8 @@ input[id=paid]:checked ~ .review, input[id=paid]:checked ~ .bad, input[id=paid]:
   height: 1px;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 [name=tab-filter] {
@@ -303,7 +305,7 @@ input[id=paid]:checked ~ .review, input[id=paid]:checked ~ .bad, input[id=paid]:
   transition: 0.3s;
 }
 [name=tab-filter] + label:first-of-type {
-  margin-left: 12px;
+  margin-left: 8px;
 }
 [name=tab-filter] + label:not(:first-of-type) {
   margin-left: 10px;
@@ -321,8 +323,8 @@ input[id=paid]:checked ~ .review, input[id=paid]:checked ~ .bad, input[id=paid]:
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -20px;
-  margin-left: -24px;
-  margin-right: -24px;
+  margin-left: -16px;
+  margin-right: -16px;
   outline: #9747ff 1px dashed;
 }
 .plugin-list label {
@@ -330,21 +332,28 @@ input[id=paid]:checked ~ .review, input[id=paid]:checked ~ .bad, input[id=paid]:
 }
 .plugin-card {
   width: 20%;
-  padding: 0 12px;
+  padding: 0 8px;
   margin-bottom: 20px;
 }
 .plugin-card:nth-child {
   color: red !important;
 }
 .plugin-link {
-  overflow: hidden;
   width: 100%;
+  overflow: hidden;
 }
 .plugin-content {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
   width: 100%;
+  transition: 0.3s;
+  color: rgba(57, 57, 57, 0.7);
+  box-shadow: 0 10px 12px -5px rgba(0, 0, 0, 0.05);
+}
+.plugin-content:hover {
+  color: #393939;
+  box-shadow: 0 10px 12px -5px rgba(0, 0, 0, 0.2);
 }
 .plugin-content p {
   position: absolute;
@@ -353,10 +362,9 @@ input[id=paid]:checked ~ .review, input[id=paid]:checked ~ .bad, input[id=paid]:
   font-size: 10px;
   font-weight: 800;
   text-transform: uppercase;
-  top: 0;
-  left: 0;
   z-index: 10;
   background: rgba(255, 165, 0, 0.7);
+  display: none;
 }
 .plugin-preview {
   position: relative;
@@ -365,33 +373,29 @@ input[id=paid]:checked ~ .review, input[id=paid]:checked ~ .bad, input[id=paid]:
   z-index: 1;
   width: 100%;
   height: 100%;
-  outline: #9747ff 1px dashed;
 }
 .plugin-preview img {
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .plugin-info {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.75);
+  background: white;
   z-index: 2;
+  padding: 6px 10px 8px;
+  font-size: 14px;
 }
 .plugin-info strong {
   padding: 0;
   margin: 0;
-  font-size: 14px;
-}
-.plugin-preview img {
-  border-radius: 10.1px;
-  position: absolute;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 pre {
