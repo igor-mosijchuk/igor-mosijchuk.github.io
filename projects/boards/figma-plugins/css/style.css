@@ -182,51 +182,56 @@ footer {
 }
 
 .main-cont {
-  max-width: 1200px;
+  max-width: 1000px;
   padding-left: 40px;
   padding-right: 40px;
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 200;
-  letter-spacing: -0.04em;
-  line-height: 1.2;
-}
-h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
-  font-weight: 400;
-  transition: 0.4s;
-}
-h1 span:hover, h2 span:hover, h3 span:hover, h4 span:hover, h5 span:hover, h6 span:hover {
-  font-weight: 710;
+.head, .red, h1 {
+  line-height: 120%;
 }
 
-h4, h5, h6 {
-  text-transform: uppercase;
+embed, pre {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 1em 0.5em 1em 0;
+  tab-size: 2em;
+  line-height: 100%;
 }
 
-h1 {
-  font-size: 4.8rem;
+li:not(:last-of-type) pre {
+  background-color: rgba(255, 165, 0, 0.2);
+  padding: 15px;
+}
+pre li:not(:last-of-type) {
+  margin-bottom: 12px;
+  background: #000;
 }
 
-h2 {
-  font-size: 3.8rem;
+pre,
+pre .line-number {
+  color: black;
+  display: block;
 }
 
-h3 {
-  font-size: 3rem;
+pre .line-number {
+  float: left;
+  width: 60px;
+  margin-right: 25px;
+  border-right: 2px solid grey;
+  text-align: right;
 }
 
-h4 {
-  font-size: 2.4rem;
-}
-
-h5 {
-  font-size: 2rem;
-}
-
-h6 {
-  font-size: 1.6rem;
+pre .line-number span {
+  display: block;
+  font-size: 11.1px;
+  margin-right: 1em;
+  opacity: 0.2;
+  outline: 1px solid;
+  padding-left: 1em;
+  padding-right: 0.5em;
 }
 
 header.figma, footer.figma {
@@ -331,9 +336,9 @@ input[id=paid]:checked ~ .review, input[id=paid]:checked ~ .bad, input[id=paid]:
   align-self: center;
 }
 .plugin-card {
-  width: 20%;
   padding: 0 8px;
   margin-bottom: 20px;
+  width: 25%;
 }
 .plugin-card:nth-child {
   color: red !important;
@@ -354,6 +359,22 @@ input[id=paid]:checked ~ .review, input[id=paid]:checked ~ .bad, input[id=paid]:
 .plugin-content:hover {
   color: #393939;
   box-shadow: 0 10px 12px -5px rgba(0, 0, 0, 0.2);
+}
+.plugin-content ul {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 6px;
+}
+.plugin-content li {
+  background: yellow;
+  padding: 2px 5px;
+  border-radius: 100px;
+}
+.plugin-content li:not(:last-of-type) {
+  margin-right: 8px;
 }
 .plugin-content p {
   position: absolute;
@@ -396,9 +417,5 @@ input[id=paid]:checked ~ .review, input[id=paid]:checked ~ .bad, input[id=paid]:
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-pre {
-  font-size: 100px;
 }
 /*# sourceMappingURL=style.css.map */
