@@ -11,8 +11,9 @@
 
 <body>
 	<ul class="code">
-		<pre>
-Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+<pre>
+1Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 Expedita cum vero, quaerat doloribus inventore nulla?
 Dolorum quaerat, pariatur suscipit quo quisquam,
 ratione, eos beatae alias enim aliquid natus quae dolorem.
@@ -23,7 +24,7 @@ ratione, eos beatae alias enim aliquid natus quae dolorem.
 </pre>
 		<pre>
 (function() {
-	var s = document.createElement('script');
+	let s = document.createElement('script');
 		s.id = "some-id";
 			s.type = "text/javascript";
 	document.body.appendChild(s);
@@ -33,13 +34,13 @@ ratione, eos beatae alias enim aliquid natus quae dolorem.
 
 	<script>
 		(function () {
-			var pre = document.querySelectorAll('ul.code pre'),
+			let pre = document.querySelectorAll('ul.code pre'),
 				pl = pre.length;
-			for (var i = 0; i < pl; i++) {
+			for (let i = 0; i < pl; i++) {
 				pre[i].innerHTML = '<div class="line-number"></div>' + pre[i].innerHTML;
-				var num = pre[i].innerHTML.split(/\n/).length;
-				for (var j = 0; j < num - 1; j++) {
-					var line_num = pre[i].getElementsByTagName('div')[0];
+				let num = pre[i].innerHTML.split(/\n/).length;
+				for (let j = 0; j < num - 1; j++) {
+					let line_num = pre[i].getElementsByTagName('div')[0];
 					line_num.innerHTML += '<span>' + (j + 1) + '</span>';
 				}
 			}
