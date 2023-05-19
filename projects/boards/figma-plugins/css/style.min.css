@@ -1,0 +1,449 @@
+@font-face {
+  font-family: Manrope;
+  font-display: swap;
+  src: url("../fonts/Manrope-ExtraLight.woff2") format("woff2"), url("../fonts/Manrope-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: Manrope;
+  font-display: swap;
+  src: url("../fonts/Manrope-ExtraBold.woff2") format("woff2"), url("../fonts/Manrope-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Manrope;
+  font-display: swap;
+  src: url("../fonts/Manrope-SemiBold.woff2") format("woff2"), url("../fonts/Manrope-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Manrope;
+  font-display: swap;
+  src: url("../fonts/Manrope-Regular.woff2") format("woff2"), url("../fonts/Manrope-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input, button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.page-top-btn span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.main-cont {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+::selector {
+  background: transparent;
+}
+
+:focus {
+  border: none;
+  outline: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.5rem;
+  font-weight: 200;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font: 200 1rem/1.5 Manrope, sans-serif;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.page-wrap {
+  background: rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+.page-content {
+  flex-direction: column;
+  display: flex;
+  border: rgba(0, 0, 0, 0.05) 3px dashed;
+  min-height: 100vh;
+  min-height: 1600px;
+}
+.page-top-btn {
+  background: grey;
+  border-radius: 100%;
+  bottom: 40px;
+  height: 50px;
+  position: absolute;
+  position: fixed;
+  z-index: 100000;
+  right: 40px;
+  width: 50px;
+}
+.page-top-btn span {
+  text-align: center;
+  margin: auto;
+  width: 20px;
+  height: 30px;
+}
+
+.main-cont {
+  max-width: 1000px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+}
+
+.head, .red, h1 {
+  line-height: 120%;
+}
+
+embed, pre {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 1em 0.5em 1em 0;
+  tab-size: 2em;
+  line-height: 100%;
+}
+
+li:not(:last-of-type) pre {
+  background-color: rgba(255, 165, 0, 0.2);
+  padding: 15px;
+}
+pre li:not(:last-of-type) {
+  margin-bottom: 12px;
+  background: #000;
+}
+
+pre,
+pre .line-number {
+  color: black;
+  display: block;
+}
+
+pre .line-number {
+  float: left;
+  width: 60px;
+  margin-right: 25px;
+  border-right: 2px solid grey;
+  text-align: right;
+}
+
+pre .line-number span {
+  display: block;
+  font-size: 11.1px;
+  margin-right: 1em;
+  opacity: 0.2;
+  outline: 1px solid;
+  padding-left: 1em;
+  padding-right: 0.5em;
+}
+
+.mac-icons {
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.mac-icons-list {
+  background: white;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -33px;
+}
+.mac-icons-list li {
+  width: 50%;
+  background: rgba(255, 0, 0, 0.1);
+  margin-bottom: 33px;
+}
+.mac-icons-list li:nth-child(even) {
+  border-left: 40px solid rgba(255, 0, 0, 0.2);
+}
+.mac-icons-list li:nth-child(odd) {
+  border-right: 40px solid rgba(255, 0, 0, 0.2);
+}
+.mac-icons-card {
+  border: 1px solid red;
+  margin: 15px;
+}
+
+header.figma, footer.figma {
+  background: rgba(255, 0, 0, 0.05);
+  padding: 20px;
+}
+
+nav {
+  background: yellow;
+}
+
+.tabs-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.tabs-nav-item {
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.tabs-nav-item.is-active {
+  background: rgba(255, 0, 0, 0.1);
+  background: white;
+}
+
+.tab {
+  display: none;
+  padding: 12px;
+}
+
+.tab.is-active {
+  display: block;
+}
+
+input[id=paid]:checked ~ .review, input[id=paid]:checked ~ .bad, input[id=paid]:checked ~ .must_have, input[id=paid]:checked ~ .like, input[id=paid]:checked ~ .dont_install, input[id=review]:checked ~ .paid, input[id=review]:checked ~ .bad, input[id=review]:checked ~ .must_have, input[id=review]:checked ~ .like, input[id=review]:checked ~ .dont_install, input[id=bad]:checked ~ .paid, input[id=bad]:checked ~ .review, input[id=bad]:checked ~ .must_have, input[id=bad]:checked ~ .like, input[id=bad]:checked ~ .dont_install, input[id=must_have]:checked ~ .paid, input[id=must_have]:checked ~ .review, input[id=must_have]:checked ~ .bad, input[id=must_have]:checked ~ .like, input[id=must_have]:checked ~ .dont_install, input[id=like]:checked ~ .paid, input[id=like]:checked ~ .review, input[id=like]:checked ~ .bad, input[id=like]:checked ~ .must_have, input[id=like]:checked ~ .dont_install, input[id=dont_install]:checked ~ .paid, input[id=dont_install]:checked ~ .review, input[id=dont_install]:checked ~ .bad, input[id=dont_install]:checked ~ .must_have, input[id=dont_install]:checked ~ .like {
+  display: none;
+}
+
+.input-frame {
+  width: 100%;
+  margin: 10px 8px 40px;
+}
+
+#search-input {
+  width: 100%;
+  background: white;
+  border-radius: 4px;
+}
+
+.tabs-bottom {
+  width: 100%;
+  background: orange;
+  height: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+[name=tab-filter] {
+  display: none;
+}
+
+[name=tab-filter] + label {
+  background: grey;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.5rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+[name=tab-filter] + label:first-of-type {
+  margin-left: 8px;
+}
+[name=tab-filter] + label:not(:first-of-type) {
+  margin-left: 10px;
+}
+[name=tab-filter] + label:hover {
+  background: #393939;
+}
+
+[name=tab-filter]:checked + label {
+  background: orange;
+}
+
+.plugin-list {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+  margin-left: -16px;
+  margin-right: -16px;
+  outline: #9747ff 1px dashed;
+}
+.plugin-list label {
+  align-self: center;
+}
+.plugin-card {
+  padding: 0 8px;
+  margin-bottom: 20px;
+  width: 25%;
+}
+.plugin-card:nth-child {
+  color: red !important;
+}
+.plugin-link {
+  width: 100%;
+  overflow: hidden;
+}
+.plugin-content {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  transition: 0.3s;
+  color: rgba(57, 57, 57, 0.7);
+  box-shadow: 0 10px 12px -5px rgba(0, 0, 0, 0.05);
+}
+.plugin-content:hover {
+  color: #393939;
+  box-shadow: 0 10px 12px -5px rgba(0, 0, 0, 0.2);
+}
+.plugin-content ul {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 6px;
+}
+.plugin-content li {
+  background: yellow;
+  padding: 2px 5px;
+  border-radius: 100px;
+}
+.plugin-content li:not(:last-of-type) {
+  margin-right: 8px;
+}
+.plugin-content p {
+  position: absolute;
+  padding: 6px 10px 3px;
+  letter-spacing: 0.08em;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  z-index: 10;
+  background: rgba(255, 165, 0, 0.7);
+  display: none;
+}
+.plugin-preview {
+  position: relative;
+  padding-top: 56.25%;
+  width: 100%;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.plugin-preview img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.plugin-info {
+  background: white;
+  z-index: 2;
+  padding: 6px 10px 8px;
+  font-size: 14px;
+}
+.plugin-info strong {
+  padding: 0;
+  margin: 0;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */
