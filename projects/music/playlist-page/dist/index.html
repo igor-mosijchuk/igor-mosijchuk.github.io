@@ -13,38 +13,168 @@
 	<link rel="icon" href="apple-touch-icon.png">
 	<link rel="manifest" href="manifest.json">
 
-	<link rel="stylesheet" href="css/style.min.css?_v=20230820111934">
+	<link rel="stylesheet" href="css/style.min.css">
 
 </head>
 
 <body>
+	<div class="page-wrap" id="page-scrollbar" data-scrollbar="true">
 		<div class="page">
 
-			<header id="top">
-	<div class="main-cont">
-		<div class="footer-content">
-			header content
-		</div>
-	</div>
-</header>
+			<header id="top"></header>
 
 
 			<main>
+	<div class="main-cont">
+		<div class="footer-content">
 
+			<div id="playlist">
+				<div class="mp-track-wrapper">
+
+					<div class="mp-track" tmplayer-init="multitrack">
+
+						<div class="sp-details-wrapper">
+
+
+							<div class="sp-title-wrapper">
+								<h6 class="sp-title" tmplayer-element="title">Title</h6>
+								<h4 class="sp-artist-name" tmplayer-element="artist">Artist</h4>
+							</div>
+
+							<img class="sp-thumbnail" tmplayer-element="thumbnail">
+
+
+						</div>
+
+
+						<div class="mp-controls-wrapper">
+
+
+							<div class="mp-controls">
+								<img class="mp-previous" src="img/svgicons/backwards.svg" tmplayer-button="previous">
+								<img class="mp-play" src="img/svgicons/play.svg" tmplayer-button="play">
+								<img class="mp-pause" src="img/svgicons/stop.svg" tmplayer-button="pause">
+								<img class="mp-next" src="img/svgicons/forward.svg" tmplayer-button="next">
+							</div>
+
+
+							<div class="mp-media-player-bar-wrapper">
+
+
+								<p class="mp-elapsed">0:00</p>
+
+
+								<div class="mp-progress-bar-wrapper">
+									<div class="mp-progress-bar-background">
+										<div class="progress-bar">
+											<div class="true-progress-head">
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<p class="mp-duration">000:00</p>
+
+
+							</div>
+
+
+						</div>
+
+
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<div class="mp-single-track" tmplayer-parent="multitrack" tmplayer-action="toggle">
+						<div class="mp-title-wrapper"></div>
+						<div class="mp-track-time-wrapper">
+							<img class="mp-audio-bar" src="img/svgicons/audio-active.svg">
+							<div class="mp-track-time" tmplayer-interaction="populate-duration">0:0</div>
+						</div>
+
+						<div class="true-media-player-single-track">
+							<p class="mp-track-url" tmplayer-meta="audio-url">https://igor-mosijchuk.github.io/projects/music/inter/Harrison%20Brome/Harrison%20Brome%20-%20Gambling%20Hearts.mp3</p>
+							<img class="mp-track-thumbnail" tmplayer-meta="thumbnail">
+							<p class="mp-track-artist" tmplayer-meta="artist"></p>
+							<p class="mp-track-title" tmplayer-meta="title"></p>
+						</div>
+					</div>
+
+
+
+
+					<div class="mp-single-track" tmplayer-parent="multitrack" tmplayer-action="toggle">
+						<div class="mp-title-wrapper"></div>
+						<div class="mp-track-time-wrapper">
+							<img class="mp-audio-bar" src="img/svgicons/audio-active.svg">
+							<div class="mp-track-time" tmplayer-interaction="populate-duration">0:0</div>
+						</div>
+
+						<div class="true-media-player-single-track">
+							<p class="mp-track-url" tmplayer-meta="audio-url">https://igor-mosijchuk.github.io/projects/music/inter/Besso/Besso%20-%20Ananya.mp3</p>
+							<img class="mp-track-thumbnail" tmplayer-meta="thumbnail">
+							<p class="mp-track-artist" tmplayer-meta="artist"></p>
+							<p class="mp-track-title" tmplayer-meta="title"></p>
+						</div>
+					</div>
+
+
+
+					<div class="mp-single-track" tmplayer-parent="multitrack" tmplayer-action="toggle">
+						<div class="mp-title-wrapper"></div>
+						<div class="mp-track-time-wrapper">
+							<img class="mp-audio-bar" src="img/svgicons/audio-active.svg">
+							<div class="mp-track-time" tmplayer-interaction="populate-duration">0:0</div>
+						</div>
+
+						<div class="true-media-player-single-track">
+							<p class="mp-track-url" tmplayer-meta="audio-url">https://igor-mosijchuk.github.io/projects/music/inter/Besso/Besso%20-%20Broken.mp3</p>
+							<img class="mp-track-thumbnail" tmplayer-meta="thumbnail">
+							<p class="mp-track-artist" tmplayer-meta="artist"></p>
+							<p class="mp-track-title" tmplayer-meta="title"></p>
+						</div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
 </main>
 
 
-			<footer>
-	<div class="main-cont">
-		<div class="footer-content">
-			footer content
-		</div>
-	</div>
-</footer>
-		</div>
-	</div>
-	<script src="js/app.min.js?_v=20230820111934"></script>
 
+		</div>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<script src="https://trueaudioplayer.b-cdn.net/true-audio-player@1.min.js"></script>
+	<script src="js/app.min.js"></script>
 </body>
 
 </html>

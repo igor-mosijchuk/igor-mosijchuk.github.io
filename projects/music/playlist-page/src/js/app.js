@@ -1,4 +1,5 @@
-import './new.js';
+// import './new.js';
+
 import Scrollbar from 'smooth-scrollbar';
 import { AnchorPlugin } from './modules/anchor-plugin.js';
 import OverscrollPlugin from 'smooth-scrollbar/plugins/overscroll/index.js';
@@ -30,6 +31,5 @@ if (window.matchMedia("(min-width: 500px)").matches) {
 
 	document.querySelector('.scrollbar-thumb-y').insertAdjacentHTML("beforeend", `<div class="scrollbar-inner"></div>`);
 }
-
 
 projectFunctions.isWebp();

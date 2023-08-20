@@ -1,0 +1,39 @@
+html
+	font-size: 20px
+	scroll-behavior: smooth
+
+body
+	font: 200 0.8rem/1 "Manrope", sans-serif
+
+.page-wrap
+	position: relative
+	padding-bottom: 250px
+h1
+	font-size: 4rem
+h2
+	font-size: 3rem
+h3
+	font-size: 2rem
+h5
+	font-size: 0.7rem
+	font-weight: 800
+
+
+@media screen and (min-width: 500px)
+	.page
+		min-height: 100vh
+		display: flex
+		flex-direction: column
+	[data-scrollbar]
+		height: 100vh
+		overflow: hidden
+
+main
+	font-size: 20px
+
+
+.main-cont
+	width: 100%
+	max-width: $main_cont
+	+hm(auto)
+	+hp(20px)
