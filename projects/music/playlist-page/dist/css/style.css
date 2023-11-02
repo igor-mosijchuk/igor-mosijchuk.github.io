@@ -286,6 +286,11 @@ footer {
   flex-direction: column;
 }
 
+.mp-track-thumbnail {
+  width: 50px;
+  height: 50px;
+}
+
 .mp-controls-wrapper {
   display: flex;
   width: 100%;
@@ -332,6 +337,16 @@ footer {
   background: #fff;
 }
 
+.mp-single-track {
+  display: flex;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  transition: background 0.2s;
+}
+.mp-single-track:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
 .sp-details-wrapper {
   color: white;
 }
@@ -342,7 +357,7 @@ footer {
 }
 
 .mp-track-wrapper {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
 }
 .mp-track {
   background: rgba(0, 0, 0, 0.5);
