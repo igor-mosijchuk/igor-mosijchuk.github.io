@@ -81,7 +81,7 @@
  * */
 
 .sg figcaption,
-.alphabet.code {
+#alphabet-rows tbody:not(:first-of-type) .code {
   font-family: SF_Mono;
 }
 
@@ -226,6 +226,13 @@ input {
   line-height: inherit;
 }
 
+table {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -362,9 +369,9 @@ body {
   -moz-background-size: 32px;
   -o-background-size: 32px;
   background-size: 32px;
-  -webkit-box-shadow: 0 10px 30px rgba(145, 170, 190, 0.3);
-  -moz-box-shadow: 0 10px 30px rgba(145, 170, 190, 0.3);
-  box-shadow: 0 10px 30px rgba(145, 170, 190, 0.3);
+  -webkit-box-shadow: 0 10px 30px rgba(54, 67, 76, 0.35);
+  -moz-box-shadow: 0 10px 30px rgba(54, 67, 76, 0.35);
+  box-shadow: 0 10px 30px rgba(54, 67, 76, 0.35);
   display: inline-block;
 }
 
@@ -525,8 +532,11 @@ body {
  * ————————————————————————————————————————————————————————————————————————————
  * */
 
-.alphabet-table {
+.content .sections {
   background: #f4f8fb;
+}
+
+.alphabet-table {
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
@@ -565,6 +575,10 @@ body {
   border-radius: 12px !important;
 }
 
+#alphabet-rows tbody {
+  min-height: 48px;
+}
+
 #alphabet-rows tbody:first-of-type {
   position: -webkit-sticky;
   position: sticky;
@@ -572,13 +586,6 @@ body {
   z-index: 3;
   background: #36434c;
   color: #fff;
-}
-
-#alphabet-rows tbody:first-of-type td {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
 }
 
 #alphabet-rows tbody:first-of-type .g-sheets {
@@ -596,14 +603,18 @@ body {
 
 #alphabet-rows tbody:not(:first-of-type) {
   cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 #alphabet-rows tbody:not(:first-of-type):hover {
   background: #f0f9ff;
 }
 
-#alphabet-rows tbody:not(:first-of-type) .alphabet.code.html {
-  background: #f0f9ff;
+#alphabet-rows tbody:not(:first-of-type) .code {
+  background: rgba(255, 255, 255, 0.8);
 }
 
 #alphabet-rows tbody:nth-of-type(2) tr {
@@ -617,9 +628,9 @@ body {
 #alphabet-rows tbody:not(:first-of-type) td:hover {
   color: #0b99ff;
   background: #fff;
-  -webkit-box-shadow: 0 3px 15px #d3dde5;
-  -moz-box-shadow: 0 3px 15px #d3dde5;
-  box-shadow: 0 3px 15px #d3dde5;
+  -webkit-box-shadow: 0 3px 15px #dbf0ff;
+  -moz-box-shadow: 0 3px 15px #dbf0ff;
+  box-shadow: 0 3px 15px #dbf0ff;
 }
 
 #alphabet-rows tr {
@@ -644,10 +655,10 @@ body {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  -webkit-transition: all 0.2s cubic-bezier(0.6, 0.6, 0, 1);
-  -o-transition: all 0.2s cubic-bezier(0.6, 0.6, 0, 1);
-  -moz-transition: all 0.2s cubic-bezier(0.6, 0.6, 0, 1);
-  transition: all 0.2s cubic-bezier(0.6, 0.6, 0, 1);
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
   display: table;
 }
 
@@ -658,10 +669,19 @@ body {
 
 #alphabet-rows td span {
   -webkit-line-clamp: 1;
+  padding-top: 1px;
+  padding-left: 2px;
+  margin-bottom: -1px;
 }
 
 #alphabet-rows td:not(.symbol) {
-  margin: 8px 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#alphabet-rows td.code {
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 /* MARK:				SETTINGS
@@ -703,6 +723,7 @@ body {
   min-width: 64px;
   font-size: 12px;
   letter-spacing: -0.02em;
+  padding-left: 3px;
 }
 
 .alphabet.code,

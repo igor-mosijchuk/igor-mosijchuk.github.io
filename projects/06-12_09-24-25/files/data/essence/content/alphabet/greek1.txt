@@ -1,0 +1,36 @@
+	html	Origin Name			Origin Name	html
+альфа	&Alpha;	Greek Capital Letter Alpha	Α	α	Greek Small Letter Alpha	&alpha;
+бета	&Beta;	Greek Capital Letter Beta	Β	β	Greek Small Letter Beta	&beta;
+гамма	&Gamma;	Greek Capital Letter Gamma	Γ	γ	Greek Small Letter Gamma	&gamma;
+дельта	&Delta;	Greek Capital Letter Delta	Δ	δ	Greek Small Letter Delta	&delta;
+епсилон	0395	Greek Capital Letter Epsilon	Ε	ε	Greek Small Letter Epsilon	1231
+дзета	0396	Greek Capital Letter Zeta	Ζ	ζ	Greek Small Letter Zeta	03b6
+ета	0397	Greek Capital Letter Eta	Η	η	Greek Small Letter Eta	03b7
+тета	0398	Greek Capital Letter Theta	Θ	θ	Greek Small Letter Theta	03b8
+йота	0399	Greek Capital Letter Iota	Ι	ι	Greek Small Letter Iota	03b9
+каппа	039a	Greek Capital Letter Kappa	Κ	κ	Greek Small Letter Kappa	03ba
+лямбда	039b	Greek Capital Letter Lamda	Λ	λ	Greek Small Letter Lamda	03bb
+мю	039c	Greek Capital Letter Mu	Μ	μ	Greek Small Letter Mu	03bc
+ню	039d	Greek Capital Letter Nu	Ν	ν	Greek Small Letter Nu	03bd
+ксі	039e	Greek Capital Letter Xi	Ξ	ξ	Greek Small Letter Xi	03be
+омікрон	039f	Greek Capital Letter Omicron	Ο	ο	Greek Small Letter Omicron	03bf
+пі	03a0	Greek Capital Letter Pi	Π	π	Greek Small Letter Pi	03c0
+ро	03a1	Greek Capital Letter Rho	Ρ	ρ	Greek Small Letter Rho	03c1
+сигма	03a3	Greek Capital Letter Sigma	Σ	σ	Greek Small Letter Sigma	03c3
+тау	03a4	Greek Capital Letter Tau	Τ	τ	Greek Small Letter Tau	03c4
+іпсилон	03a5	Greek Capital Letter Upsilon	Υ	υ	Greek Small Letter Upsilon	03c5
+фі	03a6	Greek Capital Letter Phi	Φ	φ	Greek Small Letter Phi	03c6
+хі	03a7	Greek Capital Letter Chi	Χ	χ	Greek Small Letter Chi	03c7
+псі	03a8	Greek Capital Letter Psi	Ψ	ψ	Greek Small Letter Psi	03c8
+омега	03a9	Greek Capital Letter Omega	Ω	ω	Greek Small Letter Omega	03c9
+застарілі	—	—	—	—	—	—
+дигамма	03dc	Greek Letter Digamma	Ϝ	ϝ	Greek Small Letter Digamma	03dd
+дигамма (архаїчна)	0376	Greek Capital Letter Pamphylian Digamma	Ͷ	ͷ	Greek Small Letter Pamphylian Digamma	0377
+стигма	03da	Greek Letter Stigma	Ϛ	ϛ	Greek Small Letter Stigma	03db
+хета	0370	Greek Capital Letter Heta	Ͱ	ͱ	Greek Small Letter Heta	0371
+сан	03fa	Greek Capital Letter San	Ϻ	ϻ	Greek Small Letter San	03fb
+коппа	03de	Greek Letter Koppa	Ϟ	ϟ	Greek Small Letter Koppa	03df
+коппа (архаїчна)	03d8	Greek Letter Archaic Koppa	Ϙ	ϙ	Greek Small Letter Archaic Koppa	03d9
+сампі	03e0	Greek Letter Sampi	Ϡ	ϡ	Greek Small Letter Sampi	03e1
+сампі (архаїчна)	0372	Greek Capital Letter Archaic Sampi	Ͳ	ͳ	Greek Small Letter Archaic Sampi	0373
+шо	03f7	Greek Capital Letter Sho	Ϸ	ϸ	Greek Small Letter Sho	03f8

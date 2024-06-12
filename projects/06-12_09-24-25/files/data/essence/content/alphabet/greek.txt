@@ -1,36 +1,36 @@
-	ascii	html		\u					ascii	html		\u
-альфа	&#913;		913	0391	Greek Capital Letter Alpha	Α	α	Greek Small Letter Alpha	&#945;		945	03b1
-бета	&#914;		914	0392	Greek Capital Letter Beta	Β	β	Greek Small Letter Beta	&#946;		946	03b2
-гамма	&#915;		915	0393	Greek Capital Letter Gamma	Γ	γ	Greek Small Letter Gamma	&#947;		947	03b3
-дельта	&#916;		916	0394	Greek Capital Letter Delta	Δ	δ	Greek Small Letter Delta	&#948;		948	03b4
-епсилон	&#917;		917	0395	Greek Capital Letter Epsilon	Ε	ε	Greek Small Letter Epsilon	&#949;		949	03b5
-дзета	&#918;		918	0396	Greek Capital Letter Zeta	Ζ	ζ	Greek Small Letter Zeta	&#950;		950	03b6
-ета	&#919;		919	0397	Greek Capital Letter Eta	Η	η	Greek Small Letter Eta	&#951;		951	03b7
-тета	&#920;		920	0398	Greek Capital Letter Theta	Θ	θ	Greek Small Letter Theta	&#952;		952	03b8
-йота	&#921;		921	0399	Greek Capital Letter Iota	Ι	ι	Greek Small Letter Iota	&#953;		953	03b9
-каппа	&#922;		922	039a	Greek Capital Letter Kappa	Κ	κ	Greek Small Letter Kappa	&#954;		954	03ba
-лямбда	&#923;		923	039b	Greek Capital Letter Lamda	Λ	λ	Greek Small Letter Lamda	&#955;		955	03bb
-мю	&#924;		924	039c	Greek Capital Letter Mu	Μ	μ	Greek Small Letter Mu	&#956;		956	03bc
-ню	&#925;		925	039d	Greek Capital Letter Nu	Ν	ν	Greek Small Letter Nu	&#957;		957	03bd
-ксі	&#926;		926	039e	Greek Capital Letter Xi	Ξ	ξ	Greek Small Letter Xi	&#958;		958	03be
-омікрон	&#927;		927	039f	Greek Capital Letter Omicron	Ο	ο	Greek Small Letter Omicron	&#959;		959	03bf
-пі	&#928;		928	03a0	Greek Capital Letter Pi	Π	π	Greek Small Letter Pi	&#960;		960	03c0
-ро	&#929;		929	03a1	Greek Capital Letter Rho	Ρ	ρ	Greek Small Letter Rho	&#961;		961	03c1
-сигма	&#931;		931	03a3	Greek Capital Letter Sigma	Σ	σ	Greek Small Letter Sigma	&#963;		963	03c3
-тау	&#932;		932	03a4	Greek Capital Letter Tau	Τ	τ	Greek Small Letter Tau	&#964;		964	03c4
-іпсилон	&#933;		933	03a5	Greek Capital Letter Upsilon	Υ	υ	Greek Small Letter Upsilon	&#965;		965	03c5
-фі	&#934;		934	03a6	Greek Capital Letter Phi	Φ	φ	Greek Small Letter Phi	&#966;		966	03c6
-хі	&#935;		935	03a7	Greek Capital Letter Chi	Χ	χ	Greek Small Letter Chi	&#967;		967	03c7
-псі	&#936;		936	03a8	Greek Capital Letter Psi	Ψ	ψ	Greek Small Letter Psi	&#968;		968	03c8
-омега	&#937;		937	03a9	Greek Capital Letter Omega	Ω	ω	Greek Small Letter Omega	&#969;		969	03c9
-застарілі	—		—	—	—	—	—	—	—	—	—	—
-дигамма	&#988;		988	03dc	Greek Letter Digamma	Ϝ	ϝ	Greek Small Letter Digamma	&#989;	&#989;	989	03dd
-дигамма (архаїчна)	&#886;		886	0376	Greek Capital Letter Pamphylian Digamma	Ͷ	ͷ	Greek Small Letter Pamphylian Digamma	&#887;		887	0377
-стигма	&#986;		986	03da	Greek Letter Stigma	Ϛ	ϛ	Greek Small Letter Stigma	&#987;		987	03db
-хета	&#880;		880	0370	Greek Capital Letter Heta	Ͱ	ͱ	Greek Small Letter Heta	&#881;		881	0371
-сан	&#1018;		1018	03fa	Greek Capital Letter San	Ϻ	ϻ	Greek Small Letter San	&#1019;		1019	03fb
-коппа	&#990;		990	03de	Greek Letter Koppa	Ϟ	ϟ	Greek Small Letter Koppa	&#991;		991	03df
-коппа (архаїчна)	&#984;		984	03d8	Greek Letter Archaic Koppa	Ϙ	ϙ	Greek Small Letter Archaic Koppa	&#985;		985	03d9
-сампі	&#992;		992	03e0	Greek Letter Sampi	Ϡ	ϡ	Greek Small Letter Sampi	&#993;		993	03e1
-сампі (архаїчна)	&#882;		882	0372	Greek Capital Letter Archaic Sampi	Ͳ	ͳ	Greek Small Letter Archaic Sampi	&#883;		883	0373
-шо	&#1015;		1015	03f7	Greek Capital Letter Sho	Ϸ	ϸ	Greek Small Letter Sho	&#1016;		1016	03f8
+	Origin Name			Origin Name
+альфа	Greek Capital Letter Alpha	Α	α	Greek Small Letter Alpha
+бета	Greek Capital Letter Beta	Β	β	Greek Small Letter Beta
+гамма	Greek Capital Letter Gamma	Γ	γ	Greek Small Letter Gamma
+дельта	Greek Capital Letter Delta	Δ	δ	Greek Small Letter Delta
+епсилон	Greek Capital Letter Epsilon	Ε	ε	Greek Small Letter Epsilon
+дзета	Greek Capital Letter Zeta	Ζ	ζ	Greek Small Letter Zeta
+ета	Greek Capital Letter Eta	Η	η	Greek Small Letter Eta
+тета	Greek Capital Letter Theta	Θ	θ	Greek Small Letter Theta
+йота	Greek Capital Letter Iota	Ι	ι	Greek Small Letter Iota
+каппа	Greek Capital Letter Kappa	Κ	κ	Greek Small Letter Kappa
+лямбда	Greek Capital Letter Lamda	Λ	λ	Greek Small Letter Lamda
+мю	Greek Capital Letter Mu	Μ	μ	Greek Small Letter Mu
+ню	Greek Capital Letter Nu	Ν	ν	Greek Small Letter Nu
+ксі	Greek Capital Letter Xi	Ξ	ξ	Greek Small Letter Xi
+омікрон	Greek Capital Letter Omicron	Ο	ο	Greek Small Letter Omicron
+пі	Greek Capital Letter Pi	Π	π	Greek Small Letter Pi
+ро	Greek Capital Letter Rho	Ρ	ρ	Greek Small Letter Rho
+сигма	Greek Capital Letter Sigma	Σ	σ	Greek Small Letter Sigma
+тау	Greek Capital Letter Tau	Τ	τ	Greek Small Letter Tau
+іпсилон	Greek Capital Letter Upsilon	Υ	υ	Greek Small Letter Upsilon
+фі	Greek Capital Letter Phi	Φ	φ	Greek Small Letter Phi
+хі	Greek Capital Letter Chi	Χ	χ	Greek Small Letter Chi
+псі	Greek Capital Letter Psi	Ψ	ψ	Greek Small Letter Psi
+омега	Greek Capital Letter Omega	Ω	ω	Greek Small Letter Omega
+застарілі	—	—	—	—
+дигамма	Greek Letter Digamma	Ϝ	ϝ	Greek Small Letter Digamma
+дигамма (архаїчна)	Greek Capital Letter Pamphylian Digamma	Ͷ	ͷ	Greek Small Letter Pamphylian Digamma
+стигма	Greek Letter Stigma	Ϛ	ϛ	Greek Small Letter Stigma
+хета	Greek Capital Letter Heta	Ͱ	ͱ	Greek Small Letter Heta
+сан	Greek Capital Letter San	Ϻ	ϻ	Greek Small Letter San
+коппа	Greek Letter Koppa	Ϟ	ϟ	Greek Small Letter Koppa
+коппа (архаїчна)	Greek Letter Archaic Koppa	Ϙ	ϙ	Greek Small Letter Archaic Koppa
+сампі	Greek Letter Sampi	Ϡ	ϡ	Greek Small Letter Sampi
+сампі (архаїчна)	Greek Capital Letter Archaic Sampi	Ͳ	ͳ	Greek Small Letter Archaic Sampi
+шо	Greek Capital Letter Sho	Ϸ	ϸ	Greek Small Letter Sho
