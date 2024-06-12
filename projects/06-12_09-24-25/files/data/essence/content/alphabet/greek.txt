@@ -1,4 +1,4 @@
-	ascii	html		\u	Origin Name			Origin Name	ascii	html		\u
+	ascii	html		\u					ascii	html		\u
 альфа	&#913;		913	0391	Greek Capital Letter Alpha	Α	α	Greek Small Letter Alpha	&#945;		945	03b1
 бета	&#914;		914	0392	Greek Capital Letter Beta	Β	β	Greek Small Letter Beta	&#946;		946	03b2
 гамма	&#915;		915	0393	Greek Capital Letter Gamma	Γ	γ	Greek Small Letter Gamma	&#947;		947	03b3
