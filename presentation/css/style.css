@@ -24,7 +24,6 @@
 }
 
 body {
-	/* display: grid; */
 	height: 100vh;
 	font-family: "Onest", sans-serif;
 	color: #a7b7c6;
@@ -42,6 +41,17 @@ h1 {
 	max-width: 1024px;
 	padding: 40px 80px;
 	margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+	.main-cont {
+		padding: 20px 40px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.main-cont {
+		padding: 16px 32px;
+	}
 }
 
 .fancybox__nav button:focus {
@@ -87,12 +97,9 @@ h1 {
 	justify-content: center;
 	align-items: center;
 }
-.fancybox__toolbar__column .f-button {
 
-}
 .is-horizontal .f-carousel__nav .f-button {
 	color: white;
-	/* background: hsla(0, 0%, 59%, .3); */
 	background: hsla(210, 14%, 11%, .3);
 	transition: 0.2s cubic-bezier(.165, .84, .44, 1);
 }
@@ -118,7 +125,4 @@ h1 {
 
 .f-thumbs.fancybox__thumbs {
 	z-index: 100;
-}
-.f-thumbs.fancybox__thumbs .f-thumbs__viewport {
-
 }
