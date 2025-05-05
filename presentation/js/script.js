@@ -16,17 +16,14 @@ Fancybox.bind("[data-fancybox]", {
 	},
 
 	slideShow: {
-		speed: 5000
-	}
+		autoStart: true,
+		speed: 3000
+	},
+	keyboard: {
+		Escape: null
+	},
 });
 
-
-
-const slides = {
-	path: './assets/cielo/',
-	count: 24,
-	digits: 2
-};
 
 const carousel = document.getElementById('myCarousel');
 
@@ -46,10 +43,14 @@ for (let i = 1; i <= slides.count; i++) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-	if (window.location.pathname.endsWith("/index.html") && !window.location.hash) {
+
+	const filename = window.location.pathname.split("/").pop().slice(0,-5);
+
+	if (window.location.pathname.endsWith("/" + filename + ".html") && !window.location.hash) {
 		window.location.hash = "#gallery-1";
 	}
 	if (window.location.pathname.endsWith("/presentation/") && !window.location.hash) {
-		window.location.hash = "index.html#gallery-1";
+		window.location.hash = ""+filename+".html#gallery-1";
 	}
+
 });
