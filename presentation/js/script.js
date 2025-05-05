@@ -22,6 +22,7 @@ Fancybox.bind("[data-fancybox]", {
 	keyboard: {
 		Escape: null
 	},
+	dragToClose: false,
 });
 
 
