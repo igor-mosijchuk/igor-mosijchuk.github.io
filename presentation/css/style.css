@@ -44,18 +44,9 @@ h1 {
 	margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
-	.main-cont {
-		padding: 20px 40px;
-	}
-}
 
-@media screen and (max-width: 480px) {
-	.main-cont {
-		padding: 16px 32px;
-	}
-}
 
+.fancybox__toolbar__column button,
 .fancybox__nav button:focus {
 	--f-button-color: transparent;
 	color: #fff;
@@ -80,7 +71,7 @@ h1 {
 	opacity: 1
 }
 
-#myCarousel {
+#presentation {
 	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
@@ -88,7 +79,7 @@ h1 {
 
 }
 
-#myCarousel .f-carousel__slide {
+#presentation .f-carousel__slide {
 	display: flex;
 	width: 100%;
 	justify-content: center;
@@ -140,31 +131,71 @@ h1 {
 	margin: 3px !important;
 }
 
-[data-fancybox-toggle-fullscreen],
-.fancybox__toolbar .fancybox__button--fullscreen {
-	display: inline-flex !important;
+
+
+
+.f-carousel__viewport {
+	margin-bottom: 40px;
 }
 
 
-.fancybox-toolbar h2 {
-	color: #ff5733;
-	/* Колір заголовка */
-	font-size: 20px;
-	/* Розмір шрифта */
+.fancybox__toolbar__column [data-fancybox-toggle-fullscreen] {
+	order: 3;
 }
 
-.fancybox-toolbar p {
-	color: #333;
-	/* Колір тексту */
+.fancybox__toolbar__column [data-fancybox-toggle-slideshow] {
+	order: 2;
+}
+.fancybox__toolbar__column [data-fancybox-toggle-thumbs] {
+	order: 1;
+}
+
+/* @media (hover: none) and (pointer: coarse) {
+	[data-fancybox-toggle-fullscreen] {
+		display: block !important;
+		visibility: visible !important;
+	}
+} */
+
+.title {
+	padding: 12px;
+
+}
+.title h3 {
+	font-size: 18px;
+	padding-top: 4px;
+
+}
+.title p {
 	font-size: 14px;
-	/* Розмір шрифта */
-	margin-top: 5px;
-	/* Відступ для абзацу */
 }
 
-.fancybox__custom-content {
-	background: rgba(0, 128, 255, 0.1);
-	padding: 10px;
-	font-size: 14px;
-	color: #004080;
+
+
+@media screen and (max-width: 768px) {
+	.main-cont {
+		padding: 20px 40px;
+	}
+	.title p {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.main-cont {
+		padding: 16px 32px;
+	}
+
+}
+
+
+.fancybox__infobar {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.fancybox__toolbar {
+	background: rgba(46, 57, 68, 0.5);
+	backdrop-filter: blur(20px);
 }
