@@ -16,7 +16,7 @@ Fancybox.bind("[data-fancybox]", {
 	},
 
 	slideShow: {
-		speed: 1000
+		speed: 5000
 	}
 });
 
@@ -48,5 +48,8 @@ for (let i = 1; i <= slides.count; i++) {
 document.addEventListener("DOMContentLoaded", function () {
 	if (window.location.pathname.endsWith("/index.html") && !window.location.hash) {
 		window.location.hash = "#gallery-1";
+	}
+	if (window.location.pathname.endsWith("/presentation/") && !window.location.hash) {
+		window.location.hash = "index.html#gallery-1";
 	}
 });
