@@ -7,6 +7,7 @@
 	display: none;
 	visibility: hidden;
 }
+
 @font-face {
 	font-family: "Onest";
 	font-display: swap;
@@ -48,6 +49,7 @@ h1 {
 		padding: 20px 40px;
 	}
 }
+
 @media screen and (max-width: 480px) {
 	.main-cont {
 		padding: 16px 32px;
@@ -63,15 +65,10 @@ h1 {
 	--fancybox-bg: rgba(46, 57, 68, 1);
 	;
 }
-.fancybox__toolbar{
+
+.fancybox__toolbar {
 	--f-button-bg: rgba(46, 57, 68, 0);
 }
-#open {
-	position: fixed;
-	right: 0;
-	top: 0;
-}
-
 
 .f-thumbs__slide,
 .f-thumbs__slide.for-image {
@@ -103,10 +100,17 @@ h1 {
 	background: hsla(210, 14%, 11%, .3);
 	transition: 0.2s cubic-bezier(.165, .84, .44, 1);
 }
-.fancybox__toolbar__column .f-button:hover:not([disabled]), .is-horizontal .f-carousel__nav .f-button:hover {
+
+.fancybox__toolbar__column .f-button:hover:not([disabled]),
+.is-horizontal .f-carousel__nav .f-button:hover {
 
 	background: hsla(210, 14%, 11%, .6);
 }
+
+.fancybox__toolbar__column .f-button {
+	overflow: hidden;
+}
+
 .fancybox__toolbar__column .f-button,
 .fancybox__nav .f-button,
 .is-horizontal .f-carousel__nav .f-button,
@@ -125,4 +129,42 @@ h1 {
 
 .f-thumbs.fancybox__thumbs {
 	z-index: 100;
+}
+
+.fancybox__toolbar__column.is-right {
+	margin-left: -3px !important;
+	margin-right: -3px !important;
+}
+
+.fancybox__toolbar__column.is-right button {
+	margin: 3px !important;
+}
+
+[data-fancybox-toggle-fullscreen],
+.fancybox__toolbar .fancybox__button--fullscreen {
+	display: inline-flex !important;
+}
+
+
+.fancybox-toolbar h2 {
+	color: #ff5733;
+	/* Колір заголовка */
+	font-size: 20px;
+	/* Розмір шрифта */
+}
+
+.fancybox-toolbar p {
+	color: #333;
+	/* Колір тексту */
+	font-size: 14px;
+	/* Розмір шрифта */
+	margin-top: 5px;
+	/* Відступ для абзацу */
+}
+
+.fancybox__custom-content {
+	background: rgba(0, 128, 255, 0.1);
+	padding: 10px;
+	font-size: 14px;
+	color: #004080;
 }
