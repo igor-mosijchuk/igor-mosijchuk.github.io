@@ -2,6 +2,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	const carousel = document.getElementById('presentation');
 
+	const ratio1 = "16x9";
+	const ratio2 = "4x3";
+
+	const sizes = {
+		"16x9": [1440, 810],
+		"4x3": [1116, 837]
+	};
+
+	const [width, height] = sizes[slides.ratio] || [0, 0];
+	// console.log(width, height);
+
+
 	const [h, p] = ['h1', 'p']
 		.map(tag => document.querySelector(`.main-cont .heading ${tag}`)?.textContent || '');
 
@@ -29,8 +41,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	Fancybox.bind('[data-fancybox]', {
-		width: 1280,
-		height: 720,
+
+		idle: false, // ← Вимикає автоприховування UI
+
+		width: width, // ← 1280 / 1200
+		height: height, // ← 720 / 900
 		Toolbar: {
 			items: {
 				heading: {

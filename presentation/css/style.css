@@ -150,13 +150,13 @@ h1 {
 }
 
 .title {
-	padding: 12px;
+	padding: 6px 12px;
 
 }
 
 .title h3 {
 	font-size: 18px;
-	padding-top: 4px;
+	padding-top: 9px;
 
 }
 
@@ -164,7 +164,26 @@ h1 {
 	font-size: 14px;
 }
 
+.f-thumbs__slide {
+	--f-thumb-width: 112px;
+	--f-thumb-height: 63px;
+}
 
+.f-carousel__thumbs.is-modern {
+	--f-thumb-gap: 4px !important;
+	--f-thumb-extra-gap: 8px !important;
+	--f-thumb-clip-width: 60px !important;
+}
+
+.is-compact .fancybox__thumbs {
+	--f-thumb-clip-width: 48px;
+	--f-thumb-extra-gap: 32px;
+}
+
+.f-button {
+	--f-button-width: 48px;
+	--f-button-height: 48px;
+}
 
 @media screen and (max-width: 768px) {
 	.main-cont {
@@ -174,6 +193,36 @@ h1 {
 	.title p {
 		display: none;
 	}
+
+	.f-thumbs__slide {
+		--f-thumb-width: 64px;
+		/* 80 */
+		--f-thumb-height: 36px;
+		/* 48 */
+	}
+
+	.is-compact .fancybox__thumbs {
+		--f-thumb-clip-width: 40px;
+		--f-thumb-extra-gap: 8px;
+	}
+
+	.f-carousel__thumbs.is-modern {
+		--f-thumb-gap: 4px !important;
+		--f-thumb-extra-gap: 8px !important;
+		--f-thumb-clip-width: 60px !important;
+	}
+
+	.f-button {
+		--f-button-width: 32px;
+		--f-button-height: 32px;
+	}
+
+	.fancybox__infobar,
+	[data-fancybox-current-index],
+	[data-fancybox-count] {
+		font-size: 14px;
+	}
+
 }
 
 @media screen and (max-width: 480px) {
@@ -181,17 +230,53 @@ h1 {
 		padding: 16px 32px;
 	}
 
+	.f-button {
+		--f-button-width: 36px;
+		--f-button-height: 36px;
+	}
+
+	.fancybox__infobar {
+		padding-top: 4px;
+
+	}
+
+	.fancybox__infobar,
+	[data-fancybox-current-index],
+	[data-fancybox-count] {
+		font-size: 12px;
+	}
+
 }
 
+.fancybox__infobar,
+.title p {
+	color: #94a5b5;
+}
 
 .fancybox__infobar {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+
+}
+
+.fancybox__toolbar__column.is-right {
+	padding-right: 12px
 }
 
 .fancybox__toolbar {
-	background: rgba(46, 57, 68, .3);
+	position: relative;
+}
+
+.fancybox__toolbar button {
+	background: hsla(210, 50%, 50%, .1);
+	margin: auto;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.fancybox__toolbar {
+	background: rgba(46, 57, 68, .2);
 	-webkit-backdrop-filter: blur(20px);
 	backdrop-filter: blur(20px);
 }
@@ -199,4 +284,36 @@ h1 {
 .fancybox__content {
 	overflow: hidden;
 	box-shadow: 0 48px 60px -28px rgba(4, 13, 23, 0.5), 0 64px 80px -32px rgba(4, 13, 23, 0.5) !important;
+}
+
+/*
+fancybox
+fancybox__toolbar
+f-thumbs
+*/
+.fancybox__toolbar.is-absolute,
+.is-compact .fancybox__toolbar {
+	position: static;
+	top: unset;
+	left: unset;
+	right: unset;
+}
+
+.is-compact .fancybox__footer {
+	position: static;
+	bottom: unset;
+	left: unset;
+	right: unset;
+	z-index: unset;
+	background: transparent;
+}
+
+
+.fancybox__toolbar {
+	/* --f-progress-color: hsla(210, 14%, 11%, .8); */
+	--f-progress-color: hsla(210, 50%, 50%, .95);
+}
+
+.fancybox__toolbar button svg {
+	z-index: 200;
 }
